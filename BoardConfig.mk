@@ -67,6 +67,7 @@ TARGET_OTA_ASSERT_DEVICE := crackling
 TW_THEME := portrait_hdpi
 TW_NEW_ION_HEAP := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/battery"
 TW_INTERNAL_STORAGE_PATH := "/data/media"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
