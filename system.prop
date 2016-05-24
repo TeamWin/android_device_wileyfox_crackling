@@ -1,0 +1,13 @@
+ro.hardware=qcom
+ro.boot.bootdevice=7824900.sdhci
+ro.hardware.keystore=msm8916
+persist.sys.usb.config=mtp,adb
+sys.usb.configfs=0
+debug.composition.type=c2d
+debug.sf.gpu_comp_tiling=1
+debug.mdpcomp.idletime=600
+persist.hwc.mdpcomp.enable=true
+persist.hwc.ptor.enable=true
+ro.opengles.version=196608
+debug.enable.sglscale=1
+ro.vendor.extension_library=libqti-perfd-client.so

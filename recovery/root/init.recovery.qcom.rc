@@ -1,0 +1,19 @@
+on boot
+
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 533333
+
+    write /sys/class/leds/red/trigger "battery-charging"
+    write /sys/class/leds/green/trigger "battery-full"
+
+# encryption support
+on init
+    wait /dev/qseecom
+    wait /dev/ion
+    chown system system /dev/qseecom
+    chown system system /dev/ion
+
+    start qseecomd
+
+service qseecomd /sbin/qseecomd
+    disabled
