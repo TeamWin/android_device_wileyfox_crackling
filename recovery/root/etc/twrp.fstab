@@ -12,4 +12,4 @@
 /efs2			emmc    /dev/block/bootdevice/by-name/modemst2 		flags=backup=1;subpartitionof=/efs1
 /firmware		vfat    /dev/block/bootdevice/by-name/modem        	flags=display="Firmware";mounttodecrypt;fsflags=ro,shortname=lower,uid=1000,gid=1026,dmask=227,fmask=337,context=u:object_r:firmware_file:s0
 
-/sdcard1		auto	/dev/block/mmcblk1p1					 	flags=display="MicroSD";storage;wipeingui;removable
+/sdcard1		auto	/dev/block/mmcblk1p1	/dev/block/mmcblk1  flags=display="MicroSD";storage;wipeingui;removable
